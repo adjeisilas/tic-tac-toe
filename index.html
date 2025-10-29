@@ -1,13 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Tic-Tac-Toe</title>
-</head>
-<body>
- 
+  </head>
+  <body>
+    <div class="header">
+      <h3>TIC TAC TOE</h3>
+      <p>Design by Mr Adjei</p>
+      <button>Start Game</button>
+    </div>
+
+    <div class="model-hidden">
+      <div class="model-content">
+        <h4>Enter Players Name</h4>
+        <div class="input">
+          <label for="player1">
+            Player 1:
+            <input
+              type="text"
+              id="player1"
+              name="player1"
+              placeholder="Player 1"
+            />
+          </label>
+          <label for="player2">
+            Player 1:
+            <input
+              type="text"
+              id="player2"
+              name="player2"
+              placeholder="Player 2"
+            />
+          </label>
+        </div>
+        <model-buttons>
+            <button>Save</button>
+            <button>Cancel</button>
+        </model-buttons>
+      </div>
+    </div>
+
+    <div class="grid-container">
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+        <div class="cell"></div>
+    </div>
+
+    <button>RESET</button>
+
+
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

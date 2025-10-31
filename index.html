@@ -10,10 +10,14 @@
     <div class="header">
       <h3>TIC TAC TOE</h3>
       <p>Design by Mr Adjei</p>
-      <button>Start Game</button>
+      <button id="start-btn">Start Game</button>
+    </div>
+    <div id="players">
+        <p id="player1Id"></p>
+        <p id="player2Id"></p>
     </div>
 
-    <div class="model-hidden">
+    <form class="model-hidden">
       <div class="model-content">
         <h4>Enter Players Name</h4>
         <div class="input">
@@ -27,7 +31,7 @@
             />
           </label>
           <label for="player2">
-            Player 1:
+            Player 2:
             <input
               type="text"
               id="player2"
@@ -36,12 +40,12 @@
             />
           </label>
         </div>
-        <model-buttons>
-            <button>Save</button>
-            <button>Cancel</button>
-        </model-buttons>
+        <div class="modal-buttons">
+            <button id="save-btn" type="submit">Save</button>
+            <button id="cancel-btn" type="button">Cancel</button>
+        </div>
       </div>
-    </div>
+    </form>
 
     <div class="grid-container">
         <div class="cell"></div>

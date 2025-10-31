@@ -76,6 +76,9 @@ body{
 }
 
 .model-content{
+    position: relative;
+    top: 100px;
+    left: 650px;
     height: 400px;
     width: 350px;
     background: linear-gradient(135deg, #2d3047 0%, #1b1b2f 100%);

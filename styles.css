@@ -76,7 +76,7 @@ body{
 }
 
 .model-content{
-    position: relative;
+    position: fixed;
     top: 100px;
     left: 650px;
     height: 400px;
@@ -132,14 +132,36 @@ body{
 .input input::placeholder{
     color: rgba(255, 255, 255, 0.5);
 }
+#players {
+    display: flex;
+    gap: 30px;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+}
 
-model-buttons{
+#players p {
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+#player1Id {
+    color: #00b4db;
+}
+
+#player2Id {
+    color: #ff416c;
+}
+
+.model-buttons{
     display: flex;
     gap: 15px;
     margin-top: 20px;
 }
 
-model-buttons button{
+.model-buttons button{
     padding: 12px 25px;
     border: none;
     border-radius: 10px;
@@ -148,17 +170,17 @@ model-buttons button{
     transition: all 0.3s ease;
 }
 
-model-buttons button:first-child{
+.model-buttons button:first-child{
     background: linear-gradient(45deg, #162401, #96c93d);
     color: white;
 }
 
-model-buttons button:last-child{
+.model-buttons button:last-child{
     background: linear-gradient(45deg, #ff416c, #ff4b2b);
     color: white;
 }
 
-model-buttons button:hover{
+.model-buttons button:hover{
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }

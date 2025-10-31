@@ -5,7 +5,7 @@ const cancelBtn = document.querySelector('#cancel-btn');
 const player1Id = document.querySelector('#player1Id');
 const player2Id = document.querySelector('#player2Id');
 const cells = document.querySelectorAll('.cell');
-const resetBtn = document.querySelector('button:last-of-type');
+const resetBtn = document.querySelector('#reset');
 
 let player1 = null;
 let player2 = null;
